@@ -44,17 +44,27 @@ class _HomeScreenState extends State<HomeScreen> {
                 }),
             const SizedBox(height: 5),
             CustomCarousel(),
-            const SizedBox(height: 5),
-            UiHelper.CustomText(
-                text: "Emergency", fontWeight: FontWeight.bold, fontSize: 16),
+            const SizedBox(height: 20),
+            Row(
+              children: [
+                const SizedBox(width: 16),
+                UiHelper.CustomText(
+                    text: "Emergency",
+                    fontWeight: FontWeight.bold,
+                    fontSize: 16)
+              ],
+            ),
             const SizedBox(height: 5),
             const Emergency(),
-            const SizedBox(height: 10),
-            UiHelper.CustomText(
-                text: "Explore LiveSafe",
-                fontWeight: FontWeight.bold,
-                fontSize: 20),
-            const SizedBox(height: 10),
+            const SizedBox(height: 20),
+            Row(children: [
+              const SizedBox(width: 16),
+              UiHelper.CustomText(
+                  text: "Explore LiveSafe",
+                  fontWeight: FontWeight.bold,
+                  fontSize: 14),
+            ]),
+            const SizedBox(height: 5),
             LiveSafe(),
           ],
         ),

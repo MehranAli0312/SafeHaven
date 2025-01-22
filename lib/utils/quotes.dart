@@ -41,19 +41,17 @@ List<DataModel> imageSliders = [
 
 List<LiveSafe> liveSafe = [
   LiveSafe(
-      name: "Bus Stations",
-      mapUrl: "bus stops near me",
-      imagePath: "bus-stop.png"),
+      name: "Police Stations",
+      mapUrl: "Police stations near me",
+      imagePath: "police-badge.png"),
   LiveSafe(
       name: "Hospitals",
       mapUrl: "Hospitals near me",
       imagePath: "hospital.png"),
   LiveSafe(
-      name: "Pharmacy",
-      mapUrl: "pharmacies near me",
-      imagePath: "pharmacy.png"),
+      name: "Bus Stations",
+      mapUrl: "bus stops near me",
+      imagePath: "bus-stop.png"),
   LiveSafe(
-      name: "Police Stations",
-      mapUrl: "Police stations near me",
-      imagePath: "police-badge.png"),
+      name: "Pharmacy", mapUrl: "pharmacies near me", imagePath: "pharmacy.png")
 ];
