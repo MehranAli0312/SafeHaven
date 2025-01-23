@@ -6,6 +6,7 @@ import 'package:safe_haven/clean/presentation/widgets/common/custom_carousel.dar
 import 'package:safe_haven/clean/presentation/widgets/common/uihelper.dart';
 import 'package:safe_haven/clean/presentation/widgets/home_widgets/emergency.dart';
 import 'package:safe_haven/clean/presentation/widgets/home_widgets/liveSafe/live_safe.dart';
+import 'package:safe_haven/clean/presentation/widgets/home_widgets/safehome/SafeHome.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -65,7 +66,9 @@ class _HomeScreenState extends State<HomeScreen> {
                   fontSize: 14),
             ]),
             const SizedBox(height: 5),
-            LiveSafe(),
+            const LiveSafe(),
+            const SizedBox(height: 5),
+            const SafeHome()
           ],
         ),
       )),
