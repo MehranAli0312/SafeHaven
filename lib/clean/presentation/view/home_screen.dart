@@ -29,47 +29,49 @@ class _HomeScreenState extends State<HomeScreen> {
       body: SafeArea(
           child: Padding(
         padding: const EdgeInsets.all(8.0),
-        child: Column(
-          children: [
-            SizedBox(
-              height: 10,
-              child: Container(
-                color: Colors.grey.shade100,
+        child: SingleChildScrollView(
+          child: Column(
+            children: [
+              SizedBox(
+                height: 10,
+                child: Container(
+                  color: Colors.grey.shade100,
+                ),
               ),
-            ),
-            const SizedBox(height: 5),
-            CustomAppbar(
-                quoteIndex: qIndex,
-                onTap: () {
-                  getRandomQuote();
-                }),
-            const SizedBox(height: 5),
-            CustomCarousel(),
-            const SizedBox(height: 20),
-            Row(
-              children: [
+              const SizedBox(height: 5),
+              CustomAppbar(
+                  quoteIndex: qIndex,
+                  onTap: () {
+                    getRandomQuote();
+                  }),
+              const SizedBox(height: 5),
+              CustomCarousel(),
+              const SizedBox(height: 20),
+              Row(
+                children: [
+                  const SizedBox(width: 16),
+                  UiHelper.CustomText(
+                      text: "Emergency",
+                      fontWeight: FontWeight.bold,
+                      fontSize: 16)
+                ],
+              ),
+              const SizedBox(height: 5),
+              const Emergency(),
+              const SizedBox(height: 20),
+              Row(children: [
                 const SizedBox(width: 16),
                 UiHelper.CustomText(
-                    text: "Emergency",
+                    text: "Explore LiveSafe",
                     fontWeight: FontWeight.bold,
-                    fontSize: 16)
-              ],
-            ),
-            const SizedBox(height: 5),
-            const Emergency(),
-            const SizedBox(height: 20),
-            Row(children: [
-              const SizedBox(width: 16),
-              UiHelper.CustomText(
-                  text: "Explore LiveSafe",
-                  fontWeight: FontWeight.bold,
-                  fontSize: 14),
-            ]),
-            const SizedBox(height: 5),
-            const LiveSafe(),
-            const SizedBox(height: 5),
-            const SafeHome()
-          ],
+                    fontSize: 14),
+              ]),
+              const SizedBox(height: 5),
+              const LiveSafe(),
+              const SizedBox(height: 5),
+              const SafeHome(),
+            ],
+          ),
         ),
       )),
     );
